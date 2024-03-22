@@ -28,7 +28,7 @@ namespace TruitjesBL.Model
             } }
         private Dictionary<Truitje,int> truitjes = new Dictionary<Truitje,int>();
 
-        public IReadOnlyList<Truitje> Truitjes => truitjes.Keys.ToList();
+        public IReadOnlyDictionary<Truitje,int> Truitjes => truitjes;
 
         public Bestelling(DateTime datum)
         {
